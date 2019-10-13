@@ -1,3 +1,11 @@
+body {
+    background: cadetblue;
+}
+
+.jumbotron, .card {
+    border: blueviolet solid 3px;
+}
+
 #counters {
     margin-top: 20px;
 }

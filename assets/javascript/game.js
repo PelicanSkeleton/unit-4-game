@@ -94,18 +94,29 @@ function crystalValue (crystal) {
 
 game();
 
+var audioElement = document.createElement("audio");
+audioElement.setAttribute("src", "./assets/images/shooting-star.mp3");
+
 $("#first-crystal").on("click", function(){
     crystalValue(crystal.one);
+   
+        audioElement.play();
 });
 
 $("#second-crystal").on("click", function(){
     crystalValue(crystal.two);
+
+    audioElement.play();
 });
 
 $("#third-crystal").on("click", function(){
     crystalValue(crystal.three);
+
+    audioElement.play();
 });
 
 $("#fourth-crystal").on("click", function(){
     crystalValue(crystal.four);
+
+    audioElement.play();
 });
