@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="reset" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="./assets/javascript/game.js"></script>
+    <title>Unit 4 Game</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="jumbotron" style="background-color: orange; color: white;">
+            <h1 class="text-center">Crystal Collector</h1>
+            <p class="text-center" style="color: black;">Instructions</p>
+            <hr class="my-4">
+            <p class="text-center" style="color: black;">You will be given a random number at the start of the game. There are four crystals below. Each crystal
+                will be assigned a random number of points and the only way to know how many points a crystal has is by
+                clicking on it. You win the game by matching your score with the random number. You lose if your score
+                goes higher than the random number.</p>
+
+        </div>
+
+        <div class="row">
+
+            <!-- Target Score -->
+            <div class="col-lg-3">
+                    <div class="card" style="background-color: orange;">
+                            <h1 class="text-center" id="target-score" style="color: white;">
+                              Target Score
+                            </h1>
+                            <div class="card-body">
+                              <blockquote class="blockquote mb-0">
+                                <h2 class="text-center">78</h2>
+                              </blockquote>
+                            </div>
+                          </div>
+            </div>
+
+            <!-- User Score -->
+            <div class="col-lg-3">
+                    <div class="card" style="background-color: orange;">
+                            <h1 class="text-center" id="user-score" style="color: white;">
+                              Your Score
+                            </h1>
+                            <div class="card-body">
+                              <blockquote class="blockquote mb-0">
+                                <h2 class="text-center">78</h2>
+                              </blockquote>
+                            </div>
+                          </div>
+            </div>
+
+            <!-- Crystals -->
+            <div class="col-lg-6">
+                    <div class="card" style="background-color: orange;">
+                            <h1 class="text-center" id="crystals" style="color: white;">
+                              Crystals
+                            </h1>
+                            <div class="card-body">
+                              <blockquote class="blockquote mb-0">
+                                <h2 class="text-center">
+                                    <img src="./assets/images/crystal1.png" alt="crystal1">
+                                    <img src="./assets/images/crystal3.png" alt="crystal3">
+                                    <img src="./assets/images/crystal2.png" alt="crystal2">
+                                    <img src="./assets/images/crystal4.png" alt="crystal4">
+                                </h2>
+                              </blockquote>
+                            </div>
+                          </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>
