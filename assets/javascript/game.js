@@ -74,7 +74,22 @@ function game (){
 
 function crystalValue (crystal) {
     userScore += crystal.value;
-    console.log("User Score: " + userScore);
+    $("#user-score").html(userScore);
+
+    if(userScore > targetScore) {
+        lossCount++;
+        $("#losses").html(lossCount);
+        alert("Better luck next time.");
+        game();
+    } else if (userScore == targetScore) {
+        winCount++;
+        $("#wins").html(winCount);
+        alert("You won! Congratulations!");
+        game();
+    }
+
+    
+    
 }
 
 game();
